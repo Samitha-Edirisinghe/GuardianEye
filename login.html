@@ -1,0 +1,55 @@
+<!-- Coding by CodingLab | www.codinglabweb.com -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Login | GuardianEye</title> 
+</head>
+<body class="dark">
+
+    <section class="home">
+        <div class="container">
+            <!-- Left Section -->
+            <div class="left-section">
+                <div class="divider"></div>
+                <div class="logo">
+                    <img src="img/GuardianEye Logo 1 size 2.png" alt="GuardianEye Logo">
+                </div>
+                <p class="tagline">If we could prevent crimes before they happen, it would make everyone feel safer. The key takeaway here is,</p>
+                <h2 class="warning">If we don't act in time, it could make everything worse.</h2>
+                <div class="divider"></div>
+            </div>
+    
+            <!-- Right Section -->
+            <div class="right-section">
+                <div class="login-box">
+                    <h2>Sign in</h2>
+                    <form>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" placeholder="example@example.com" required>
+                        
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" placeholder="**********" required>
+                        <img src="img/show.png" class="toggle-password" onclick="togglePassword()" alt="Toggle Visibility" style="cursor: pointer;">
+    
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+    
+    <script src="js/script.js"></script>
+
+</html>

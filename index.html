@@ -1,0 +1,267 @@
+<!-- Coding by CodingLab | www.codinglabweb.com -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="css/style.css"/>
+
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Dashboard | GuardianEye</title> 
+</head>
+<body class="dark" onload="initClock()">
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="img/GuardianEye Logo 2.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Guardian<span class="name2">Eye</span></span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#" class="active">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                        <span class="tooltip1">Dashboard</span>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Notifications</span>
+                        </a>
+                        <span class="tooltip2">Notifications</span>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-file icon' ></i>
+                            <span class="text nav-text">Repots</span>
+                        </a>
+                        <span class="tooltip3">Repots</span>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content menu-links">
+
+                <li class="nav-link">
+                    <a href="#">
+                        <i class='bx bx-cog icon' ></i>
+                        <span class="text nav-text">Setting</span>
+                    </a>
+                    <span class="tooltip4">Setting</span>
+                </li>
+
+                <li class="nav-link">
+                    <a href="#">
+                        <i class='bx bx-user icon' ></i>
+                        <span class="text nav-text">Profile</span>
+                    </a>
+                    <span class="tooltip5">Profile</span>
+                </li>
+                
+                <li class="nav-link">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                    <span class="tooltip6">Logout</span>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="header">
+            <div class="text">Police Crowd Crime Monitoring System</div>
+            <div class="user-container">
+                <div class="notification-bell" onclick="toggleNotifications(event)">
+                    <i class="bx bx-bell icon" style="padding-top: 5px;"></i>
+                    <span class="notification-count">4</span>
+                    <div class="dropdown" id="notificationDropdown">
+                        <h6 class="crime-video-text notification-text">Notification</h6>
+                        <!-- Notification Items -->
+                        <div class="notification-item">
+                            <h6 class="notification-id">#000001/Name</h6>
+                            <h6 class="notification-time">10 Minute Ago</h6>
+                            <button class="accept-btn">Accept</button>
+                        </div>
+                        <div class="notification-item">
+                            <h6 class="notification-id">#000002/Name</h6>
+                            <h6 class="notification-time">15 Minute Ago</h6>
+                            <button class="accept-btn">Accept</button>
+                        </div>
+                        <div class="notification-item">
+                            <h6 class="notification-id">#000003/Name</h6>
+                            <h6 class="notification-time">20 Minute Ago</h6>
+                            <button class="accept-btn">Accept</button>
+                        </div>
+                        <div class="notification-item">
+                            <h6 class="notification-id">#000004/Name</h6>
+                            <h6 class="notification-time">25 Minute Ago</h6>
+                            <button class="accept-btn">Accept</button>
+                        </div>
+
+                        <div id="noNotificationMessage" style="display: none;">
+                            <p>No New Notification</p>
+                        </div>
+                
+                        <!-- Action Buttons -->
+                        <div class="notification-actions">
+                            <button class="view-all-btn">All Notifications</button>
+                            <button class="mark-all-btn" onclick="markAllAsRead()">Mark all as read</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-profile">
+                    
+                    <div class="user-info">
+                        <p class="username">Test User 1</p>
+                        <p class="user-handle">@User1</p>
+                    </div>
+                    <img src="img/Profile.png" alt="User Profile">
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="dashboard">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28018.477126939342!2d80.08030744161556!3d6.845537335874353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae252b4e771f95f%3A0x7b8423cfccab27b7!2sPadukka!5e1!3m2!1sen!2slk!4v1738326734650!5m2!1sen!2slk" width="100%;" height="427px" style="border:0;border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="crime-details">
+
+                <div class="crime-video">
+                    <h4 class="crime-video-text">Crime Video</h4>
+                    <hr class="hr3">
+                    <div class="video-frame"></div>
+                </div>
+
+                <div class="crime-images">
+                    <h4 class="crime-video-text">Crime Image</h4>
+                    <hr class="hr3">
+                    <div class="image-carousel"></div>
+                </div>
+
+            </div>
+
+            <div class="crime-details-2">
+
+                <div class="time-and-date">
+                    <div class="time-and-date-img">
+                      <img src="img/calendar.png" width="134%" height="88px"/>
+                    </div>
+                    <div class="header-time">
+                      <div class="date">
+                        <span id="month">Month</span> : <span id="daynum">00</span> :
+                        <span id="year">Year</span>
+                      </div>
+                      <div class="time">
+                        <span id="hour">00</span> :
+                        <span id="minutes">00</span>
+                        <span id="period">PM</span>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="crime-detalis">
+                    <h4 class="crime-video-text">Crime Type</h4>
+                    <h5 class="crime-detalis-text">Gun Fight</h5>
+                    <h4 class="crime-video-text">Crime Time</h4>
+                    <h5 class="crime-detalis-text">02:55 PM</h5>
+                    <h4 class="crime-video-text">Crime Location</h4>
+                    <h5 class="crime-detalis-text">Padukka</h5>
+                </div>
+
+                <div class="crime-status">
+                    <h4 class="crime-video-text">Crime Status</h4>
+                    <hr class="hr3">
+                    <span class="crime-status-cercle"></span>
+                    <h5 class="crime-status-cercle-text">Status</h5>
+                </div>
+                
+            </div>
+        </div>
+        <hr class="hr2">
+
+        
+    </section>
+
+    
+
+</body>
+
+    <script type="text/javascript">
+        function updateClock() {
+        let now = new Date();
+
+        let mo = now.getMonth();
+        let dnum = now.getDate().toString().padStart(2, "0");
+        let yr = now.getFullYear();
+        let hou = now.getHours();
+        let min = now.getMinutes().toString().padStart(2, "0");
+        let sec = now.getSeconds().toString().padStart(2, "0");
+        let pe = hou >= 12 ? "PM" : "AM";
+
+        hou = hou % 12 || 12; // Convert 24-hour to 12-hour format
+        hou = hou.toString().padStart(2, "0");
+
+        const months = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"];
+        
+        const ids = ["month", "daynum", "year", "hour", "minutes", "seconds", "period"];
+        const values = [months[mo], dnum, yr, hou, min, sec, pe];
+
+        ids.forEach((id, i) => {
+            let element = document.getElementById(id);
+            if (element) element.textContent = values[i];
+        });
+        }
+
+        function initClock() {
+            updateClock();
+            setInterval(updateClock, 1000);
+        }
+
+  </script>
+  <script type="text/javascript" src="js/script.js"></script>
+
+</html>
