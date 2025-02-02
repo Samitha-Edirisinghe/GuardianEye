@@ -576,7 +576,7 @@ hr {
 .crime-video{
     background: var(--backgroud-color);
     border-radius: 12px;
-    height: 255px;
+    height: 227px;
 }
 
 .crime-video-text{
@@ -585,11 +585,17 @@ hr {
     padding-top: 10px;
 }
 
+.video-frame video{
+    width: 93.7%;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
 .crime-images{
     background: var(--backgroud-color);
     border-radius: 12px;
     margin-top: 10px;
-    height: 181px;
+    height: 210px;
 }
 
 .crime-details-2{
