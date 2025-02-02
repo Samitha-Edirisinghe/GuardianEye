@@ -173,7 +173,7 @@
                 <div class="crime-video">
                     <h4 class="crime-video-text">Crime Video</h4>
                     <hr class="hr3">
-                    <div class="video-frame">
+                    <div class="video-frame" onclick="openVideoFullscreen()">
                         <video id="crimeVideo" src="assets/video/1.mp4" controls></video>
                     </div>
                 </div>
@@ -184,16 +184,16 @@
                     <div class="image-carousel">
                         <div class="slider-container">
                             <div class="slider-wrapper" id="sliderWrapper">
-                                <img src="assets/img/crime-img/1.png" alt="Crime Image 1">
-                                <img src="assets/img/crime-img/2.png" alt="Crime Image 2">
-                                <img src="assets/img/crime-img/3.png" alt="Crime Image 3">
-                                <img src="assets/img/crime-img/4.png" alt="Crime Image 4">
-                                <img src="assets/img/crime-img/5.png" alt="Crime Image 5">
-                                <img src="assets/img/crime-img/6.png" alt="Crime Image 6">
-                                <img src="assets/img/crime-img/7.png" alt="Crime Image 7">
-                                <img src="assets/img/crime-img/8.png" alt="Crime Image 8">
-                                <img src="assets/img/crime-img/9.png" alt="Crime Image 9">
-                                <img src="assets/img/crime-img/10.png" alt="Crime Image 10">
+                                <img src="assets/img/crime-img/1.png" alt="Crime Image 1" onclick="openFullscreen(0)">
+                                <img src="assets/img/crime-img/2.png" alt="Crime Image 2" onclick="openFullscreen(1)">
+                                <img src="assets/img/crime-img/3.png" alt="Crime Image 3" onclick="openFullscreen(2)">
+                                <img src="assets/img/crime-img/4.png" alt="Crime Image 4" onclick="openFullscreen(3)">
+                                <img src="assets/img/crime-img/5.png" alt="Crime Image 5" onclick="openFullscreen(4)">
+                                <img src="assets/img/crime-img/6.png" alt="Crime Image 6" onclick="openFullscreen(5)">
+                                <img src="assets/img/crime-img/7.png" alt="Crime Image 7" onclick="openFullscreen(6)">
+                                <img src="assets/img/crime-img/8.png" alt="Crime Image 8" onclick="openFullscreen(7)">
+                                <img src="assets/img/crime-img/9.png" alt="Crime Image 9" onclick="openFullscreen(8)">
+                                <img src="assets/img/crime-img/10.png" alt="Crime Image 10" onclick="openFullscreen(9)">
                             </div>
                         </div>
                         <button class="prev-btn" onclick="moveSlider(-1)">&#10094;</button>
@@ -233,7 +233,7 @@
 
                 <div class="crime-status">
                     <h4 class="crime-video-text">Crime Status</h4>
-                    <hr class="hr3">
+                    <hr class="hr4">
                     <span class="crime-status-cercle"></span>
                     <h5 class="crime-status-cercle-text">Status</h5>
                 </div>
@@ -280,20 +280,6 @@
             setInterval(updateClock, 1000);
         }
 
-    </script>
-
-    <script>
-        const video = document.getElementById('crimeVideo');
-
-        video.addEventListener('play', () => {
-            if (video.requestFullscreen) {
-                video.requestFullscreen();
-            } else if (video.webkitRequestFullscreen) {
-                video.webkitRequestFullscreen();
-            } else if (video.msRequestFullscreen) {
-                video.msRequestFullscreen();
-            }
-        });
     </script>
     <script type="text/javascript" src="assets/js/script.js"></script>
     <script type="text/javascript" src="assets/js/slider.js"></script>
