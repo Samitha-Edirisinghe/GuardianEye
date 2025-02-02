@@ -174,14 +174,31 @@
                     <h4 class="crime-video-text">Crime Video</h4>
                     <hr class="hr3">
                     <div class="video-frame">
-                        <video src="assets/video/1.mp4" controls></video>
+                        <video id="crimeVideo" src="assets/video/1.mp4" controls></video>
                     </div>
                 </div>
 
                 <div class="crime-images">
                     <h4 class="crime-video-text">Crime Image</h4>
                     <hr class="hr3">
-                    <div class="image-carousel"></div>
+                    <div class="image-carousel">
+                        <div class="slider-container">
+                            <div class="slider-wrapper" id="sliderWrapper">
+                                <img src="assets/img/crime-img/1.png" alt="Crime Image 1">
+                                <img src="assets/img/crime-img/2.png" alt="Crime Image 2">
+                                <img src="assets/img/crime-img/3.png" alt="Crime Image 3">
+                                <img src="assets/img/crime-img/4.png" alt="Crime Image 4">
+                                <img src="assets/img/crime-img/5.png" alt="Crime Image 5">
+                                <img src="assets/img/crime-img/6.png" alt="Crime Image 6">
+                                <img src="assets/img/crime-img/7.png" alt="Crime Image 7">
+                                <img src="assets/img/crime-img/8.png" alt="Crime Image 8">
+                                <img src="assets/img/crime-img/9.png" alt="Crime Image 9">
+                                <img src="assets/img/crime-img/10.png" alt="Crime Image 10">
+                            </div>
+                        </div>
+                        <button class="prev-btn" onclick="moveSlider(-1)">&#10094;</button>
+                        <button class="next-btn" onclick="moveSlider(1)">&#10095;</button>
+                    </div>
                 </div>
 
             </div>
@@ -263,7 +280,22 @@
             setInterval(updateClock, 1000);
         }
 
-  </script>
-  <script type="text/javascript" src="assets/js/script.js"></script>
+    </script>
+
+    <script>
+        const video = document.getElementById('crimeVideo');
+
+        video.addEventListener('play', () => {
+            if (video.requestFullscreen) {
+                video.requestFullscreen();
+            } else if (video.webkitRequestFullscreen) {
+                video.webkitRequestFullscreen();
+            } else if (video.msRequestFullscreen) {
+                video.msRequestFullscreen();
+            }
+        });
+    </script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/slider.js"></script>
 
 </html>
