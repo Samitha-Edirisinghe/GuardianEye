@@ -1,0 +1,179 @@
+<!-- Coding by CodingLab | www.codinglabweb.com -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="assets/css/style.css"/>
+
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Notifications | GuardianEye</title> 
+</head>
+<body class="dark" onload="initClock()">
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="assets/img/GuardianEye Logo 2.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Guardian<span class="name2">Eye</span></span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="index.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                        <span class="tooltip1">Dashboard</span>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="notifications.html" class="active">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Notifications</span>
+                        </a>
+                        <span class="tooltip2">Notifications</span>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="report.html">
+                            <i class='bx bx-file icon' ></i>
+                            <span class="text nav-text">Repots</span>
+                        </a>
+                        <span class="tooltip3">Repots</span>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content menu-links">
+
+                <li class="nav-link">
+                    <a href="settings.html">
+                        <i class='bx bx-cog icon' ></i>
+                        <span class="text nav-text">Setting</span>
+                    </a>
+                    <span class="tooltip4">Setting</span>
+                </li>
+
+                <li class="nav-link">
+                    <a href="profile.html">
+                        <i class='bx bx-user icon' ></i>
+                        <span class="text nav-text">Profile</span>
+                    </a>
+                    <span class="tooltip5">Profile</span>
+                </li>
+                
+                <li class="nav-link">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                    <span class="tooltip6">Logout</span>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="header">
+            <div class="text">Police Crowd Crime Monitoring System</div>
+            <div class="user-container">
+                <div class="notification-bell" onclick="toggleNotifications(event)">
+                    <i class="bx bx-bell icon" style="padding-top: 5px;"></i>
+                    <span class="notification-count">4</span>
+                    <div class="dropdown" id="notificationDropdown">
+                        <h6 class="crime-video-text notification-text">Notification</h6>
+                        <!-- Notification Items -->
+                        <div class="notification-item">
+                            <h6 class="notification-id">#000001/Name</h6>
+                            <h6 class="notification-time">10 Minute Ago</h6>
+                            <button class="accept-btn">Accept</button>
+                        </div>
+                        <div class="notification-item">
+                            <h6 class="notification-id">#000002/Name</h6>
+                            <h6 class="notification-time">15 Minute Ago</h6>
+                            <button class="accept-btn">Accept</button>
+                        </div>
+                        <div class="notification-item">
+                            <h6 class="notification-id">#000003/Name</h6>
+                            <h6 class="notification-time">20 Minute Ago</h6>
+                            <button class="accept-btn">Accept</button>
+                        </div>
+                        <div class="notification-item">
+                            <h6 class="notification-id">#000004/Name</h6>
+                            <h6 class="notification-time">25 Minute Ago</h6>
+                            <button class="accept-btn">Accept</button>
+                        </div>
+
+                        <div id="noNotificationMessage" style="display: none;">
+                            <p>No New Notification</p>
+                        </div>
+                
+                        <!-- Action Buttons -->
+                        <div class="notification-actions">
+                            <button class="view-all-btn">All Notifications</button>
+                            <button class="mark-all-btn" onclick="markAllAsRead()">Mark all as read</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-profile">
+                    
+                    <div class="user-info">
+                        <p class="username">Test User 1</p>
+                        <p class="user-handle">@User1</p>
+                    </div>
+                    <img src="assets/img/Profile.png" alt="User Profile">
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h4 class="page-name">Notification</h4>
+
+        
+        
+    </section>
+
+    
+
+</body>
+
+    <script type="text/javascript" src="assets/js/script.js"></script>
+
+</html>
