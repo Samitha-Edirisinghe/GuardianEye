@@ -15,7 +15,7 @@
     --primary-color-light: #F6F5FF;
     --toggle-color: #3a3b3c;
     --text-color: #000;
-    --backgroud-color: rgba(0, 0, 0, 0.1);
+    --backgroud-color: rgba(0, 0, 0, 0.3);
 
     /* ====== Transition ====== */
     --tran-03: all 0.2s ease;
