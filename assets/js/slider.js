@@ -1,3 +1,4 @@
+// Coding by Samitha Randika | https://www.linkedin.com/in/samitha-randika-edirisinghe-b3a68a2b6 //
 let currentIndex = 0;
 const sliderWrapper = document.getElementById('sliderWrapper');
 const images = Array.from(sliderWrapper.children);
