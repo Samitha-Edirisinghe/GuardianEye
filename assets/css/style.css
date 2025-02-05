@@ -451,6 +451,38 @@ hr {
     opacity: 50%;
 }
 
+.hr5{
+    border: none;
+    height: 0.5px;
+    background: var(--text-color);
+    margin-top: 3.2%;
+    position: relative;
+    width: 90%;
+    left: 0px;
+    opacity: 50%;
+}
+
+.hr6{
+    border: none;
+    height: 0.5px;
+    background: var(--text-color);
+    margin-top: 3.2%;
+    position: relative;
+    width: 90%;
+    left: 18px;
+    opacity: 50%;
+}
+
+.hr7{
+    border: none;
+    height: 0.5px;
+    background: var(--text-color);
+    margin-top: 3.2%;
+    position: relative;
+    width: 90%;
+    left: 18px;
+    opacity: 50%;
+}
  /* login */
 
  /* Container */
@@ -775,9 +807,9 @@ hr {
 
 .header-time{
     float: right;
-    width: 63%;
+    width: 65%;
     padding: 10px;
-    margin-top: 5px;
+    margin-top: 8px;
     font-size: 19px;
     font-weight: bolder;
     text-align: center;
