@@ -855,7 +855,7 @@ hr {
 
 @media screen and (width: 1336px) and (height: 740px) {
     .sidebar .tooltip1 {
-        top: 17%;
+        top: 17% !important;
     }
 }
 
@@ -887,7 +887,7 @@ hr {
 
 @media screen and (width: 1336px) and (height: 740px) {
     .sidebar .tooltip2 {
-        top: 25%;
+        top: 25% !important;
     }
 }
 
@@ -918,7 +918,7 @@ hr {
 
 @media screen and (width: 1336px) and (height: 740px) {
     .sidebar .tooltip3 {
-        top: 33.2%;
+        top: 33.2% !important;
     }
 }
 
@@ -949,7 +949,7 @@ hr {
 
 @media screen and (width: 1336px) and (height: 740px) {
     .sidebar .tooltip4 {
-        top: 69%;
+        top: 69% !important;
     }
 }
 
@@ -980,7 +980,7 @@ hr {
 
 @media screen and (width: 1336px) and (height: 740px) {
     .sidebar .tooltip5 {
-        top: 77%;
+        top: 77% !important;
     }
 }
 
@@ -1011,7 +1011,7 @@ hr {
 
 @media screen and (width: 1336px) and (height: 740px) {
     .sidebar .tooltip6 {
-        top: 85%;
+        top: 85% !important;
     }
 }
 
