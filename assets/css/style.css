@@ -853,6 +853,13 @@ hr {
     display: none; /* Hide tooltip when sidebar is expanded */
 }
 
+@media screen and (width: 1336px) and (height: 740px) {
+    .sidebar .tooltip1 {
+        top: 17%;
+    }
+}
+
+
 .sidebar .tooltip2{
     position: absolute;
     left: 100%;
@@ -876,6 +883,12 @@ hr {
 
 .sidebar:not(.close) .tooltip2 {
     display: none; /* Hide tooltip when sidebar is expanded */
+}
+
+@media screen and (width: 1336px) and (height: 740px) {
+    .sidebar .tooltip2 {
+        top: 25%;
+    }
 }
 
 .sidebar .tooltip3{
@@ -903,6 +916,12 @@ hr {
     display: none; /* Hide tooltip when sidebar is expanded */
 }
 
+@media screen and (width: 1336px) and (height: 740px) {
+    .sidebar .tooltip3 {
+        top: 33.2%;
+    }
+}
+
 .sidebar .tooltip4{
     position: absolute;
     left: 100%;
@@ -926,6 +945,12 @@ hr {
 
 .sidebar:not(.close) .tooltip4 {
     display: none; /* Hide tooltip when sidebar is expanded */
+}
+
+@media screen and (width: 1336px) and (height: 740px) {
+    .sidebar .tooltip4 {
+        top: 69%;
+    }
 }
 
 .sidebar .tooltip5{
@@ -953,6 +978,12 @@ hr {
     display: none; /* Hide tooltip when sidebar is expanded */
 }
 
+@media screen and (width: 1336px) and (height: 740px) {
+    .sidebar .tooltip5 {
+        top: 77%;
+    }
+}
+
 .sidebar .tooltip6{
     position: absolute;
     left: 100%;
@@ -976,6 +1007,12 @@ hr {
 
 .sidebar:not(.close) .tooltip6 {
     display: none; /* Hide tooltip when sidebar is expanded */
+}
+
+@media screen and (width: 1336px) and (height: 740px) {
+    .sidebar .tooltip6 {
+        top: 85%;
+    }
 }
 
 .crime-detalis{
