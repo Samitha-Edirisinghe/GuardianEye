@@ -166,6 +166,114 @@
 
         <h4 class="page-name">Setting</h4>
         
+        <div class="settings-container">
+            <div class="settings-grid">
+                <!-- Account Settings -->
+                <div class="settings-card">
+                    <h3 class="settings-title">Account Settings</h3>
+                    <div class="setting-item">
+                        <label>Display Name</label>
+                        <input type="text" value="Test User 1" class="settings-input">
+                    </div>
+                    <div class="setting-item">
+                        <label>Email Address</label>
+                        <input type="email" value="user1@guardianeye.com" class="settings-input">
+                    </div>
+                    <div class="setting-item">
+                        <label>User Role</label>
+                        <select class="settings-select">
+                            <option>Senior Officer</option>
+                            <option>Junior Officer</option>
+                            <option>Administrator</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Security Settings -->
+                <div class="settings-card">
+                    <h3 class="settings-title">Security</h3>
+                    <div class="setting-item">
+                        <label>Two-Factor Authentication</label>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="setting-item">
+                        <label>Password</label>
+                        <button class="change-password-btn">Change Password</button>
+                    </div>
+                    <div class="setting-item">
+                        <label>Session Timeout</label>
+                        <select class="settings-select">
+                            <option>15 minutes</option>
+                            <option>30 minutes</option>
+                            <option>1 hour</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Notification Preferences -->
+                <div class="settings-card">
+                    <h3 class="settings-title">Notifications</h3>
+                    <div class="setting-item">
+                        <label>Crime Alerts</label>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="setting-item">
+                        <label>System Updates</label>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="setting-item">
+                        <label>Email Notifications</label>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- System Preferences -->
+                <div class="settings-card">
+                    <h3 class="settings-title">System Preferences</h3>
+                    <div class="setting-item">
+                        <label>Map Default View</label>
+                        <select class="settings-select">
+                            <option>Satellite View</option>
+                            <option>Street View</option>
+                            <option>Hybrid View</option>
+                        </select>
+                    </div>
+                    <div class="setting-item">
+                        <label>Data Retention</label>
+                        <select class="settings-select">
+                            <option>30 Days</option>
+                            <option>60 Days</option>
+                            <option>90 Days</option>
+                        </select>
+                    </div>
+                    <div class="setting-item">
+                        <label>Theme</label>
+                        <select class="settings-select" id="themeSelector">
+                            <option value="dark">Dark Mode</option>
+                            <option value="light">Light Mode</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="settings-actions">
+                <button class="save-btn">Save Changes</button>
+                <button class="reset-btn">Reset to Default</button>
+            </div>
+        </div>
+        
     </section>
 
     
