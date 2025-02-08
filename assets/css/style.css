@@ -1397,6 +1397,7 @@ hr {
     margin: 20px 30px;
     background: var(--backgroud-color);
     border-radius: 12px;
+    margin-top: 10px;
 }
 
 .reports-header {
