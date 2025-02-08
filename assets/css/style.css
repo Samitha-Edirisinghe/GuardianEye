@@ -1304,14 +1304,6 @@ hr {
     margin-bottom: 20px;
 }
 
-.filter-select, .sort-select, .search-input {
-    padding: 8px 12px;
-    border-radius: 6px;
-    border: 1px solid var(--primary-color);
-    background: var(--sidebar-color);
-    color: var(--text-color);
-}
-
 .notifications-list {
     display: flex;
     flex-direction: column;
