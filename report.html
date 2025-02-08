@@ -166,7 +166,45 @@
 
         <h4 class="page-name">Repots</h4>
 
-        
+        <div class="reports-container">
+            <div class="reports-header">
+                <div class="filter-controls">
+                    <select class="filter-select">
+                        <option>Select</option>
+                        <option>Today</option>
+                        <option>Last 7 Days</option>
+                        <option>Monthly</option>
+                    </select>
+                    <input type="text" placeholder="Search here" class="search-input">
+                    <select class="sort-select">
+                        <option>Sort By</option>
+                        <option>Newest First</option>
+                        <option>Oldest First</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="reports-list">
+                <div class="report-item">
+                    <div class="report-meta">
+                        <span class="report-id">#000001/Name</span>
+                        <span class="report-time">10 Minutes Ago</span>
+                    </div>
+                    <button class="view-report-btn">View Report</button>
+                </div>
+                
+                <!-- Repeat report-item structure for each entry -->
+                <div class="report-item">
+                    <div class="report-meta">
+                        <span class="report-id">#000002/Name</span>
+                        <span class="report-time">15 Minutes Ago</span>
+                    </div>
+                    <button class="view-report-btn">View Report</button>
+                </div>
+
+                <!-- Add more report items as needed -->
+            </div>
+        </div>
         
     </section>
 

@@ -1284,9 +1284,199 @@ hr {
 
 
 /* Notification page*/
+/* Notifications Page Styles */
+.notifications-container {
+    padding: 20px;
+    margin: 20px;
+    background: var(--backgroud-color);
+    border-radius: 12px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.notifications-header {
+    margin-bottom: 20px;
+}
+
+.filter-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-select, .sort-select, .search-input {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--primary-color);
+    background: var(--sidebar-color);
+    color: var(--text-color);
+}
+
+.notifications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.notification-section {
+    background: var(--sidebar-color);
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.section-title {
+    color: var(--text-color);
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.notification-item-page {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin: 10px 0;
+    background: var(--backgroud-color);
+    border-radius: 8px;
+    transition: var(--tran-03);
+}
+
+.notification-item-page:hover {
+    transform: translateX(5px);
+}
+
+.notification-id {
+    flex: 1;
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+.notification-time {
+    flex: 0.8;
+    color: var(--text-color);
+    font-size: 12px;
+}
+
+.notification-status {
+    flex: 0.4;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.unread{
+    background-color: #203951;
+}
+
+.unread .notification-status {
+    color: var(--text-color);
+}
+
+.deltis-btn {
+    flex: 0.3;
+    padding: 6px 12px;
+    background: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--tran-03);
+}
+
+.deltis-btn:hover {
+    background: #057ee6;
+}
 
 /* Report page*/
 
+/* Reports Page Styles */
+.reports-container {
+    padding: 20px;
+    margin: 20px 30px;
+    background: var(--backgroud-color);
+    border-radius: 12px;
+}
+
+.reports-header {
+    margin-bottom: 20px;
+}
+
+.filter-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.reports-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.report-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: var(--sidebar-color);
+    border-radius: 8px;
+    transition: var(--tran-03);
+}
+
+.report-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.report-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.report-id {
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.report-time {
+    color: var(--text-color);
+    font-size: 12px;
+}
+
+.view-report-btn {
+    padding: 8px 20px;
+    background: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: var(--tran-03);
+    font-size: 12px;
+}
+
+.view-report-btn:hover {
+    background: #057ee6;
+    transform: scale(1.05);
+}
+
+/* Filter Controls */
+.filter-select, .sort-select, .search-input {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--primary-color);
+    background: var(--sidebar-color);
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+.search-input {
+    flex: 1;
+    max-width: 300px;
+}
 /* Profile page*/
 
 /* Setting page*/
