@@ -39,7 +39,7 @@
                         
                         <label for="password">PASSWORD</label>
                         <input type="password" id="password" placeholder="**********" required>
-                        <img src="assets/img/show.png" class="toggle-password" onclick="togglePassword()" alt="Toggle Visibility" style="cursor: pointer;">
+                        <i class="bx bx-hide toggle-password"></i>
     
                         <button type="submit">Login</button>
                     </form>
@@ -51,5 +51,22 @@
 </body>
     
     <script src="assets/js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const togglePasswordButtons = document.querySelectorAll('.toggle-password');
+            
+            togglePasswordButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const input = this.parentElement.querySelector('input');
+                    const type = input.getAttribute('type') === 'password' ? 'text' : 'password';
+                    input.setAttribute('type', type);
+                    
+                    // Toggle eye icon
+                    this.classList.toggle('bx-hide');
+                    this.classList.toggle('bx-show');
+                });
+            });
+        });
+    </script>
 
 </html>
