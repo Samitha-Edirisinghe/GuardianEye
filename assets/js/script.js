@@ -32,10 +32,10 @@ function togglePassword() {
 
     if (passwordField.type === "password") {
         passwordField.type = "text";
-        toggleIcon.src = "assets/img/hide.png"; // Change to 'hide' icon
+        toggleIcon.src = "assets/img/show.png"; // Change to 'hide' icon
     } else {
         passwordField.type = "password";
-        toggleIcon.src = "assets/img/show.png"; // Change to 'show' icon
+        toggleIcon.src = "assets/img/hide.png"; // Change to 'show' icon
     }
 }
 
