@@ -1524,7 +1524,6 @@ hr {
 }
 
 .username {
-    font-size: 24px;
     color: var(--text-color);
 }
 
@@ -1728,6 +1727,7 @@ hr {
     background-color: #ccc;
     transition: var(--tran-03);
     border-radius: 34px;
+    width: 30%;
 }
 
 .slider:before {
