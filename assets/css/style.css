@@ -1622,6 +1622,7 @@ hr {
     cursor: pointer;
     font-weight: 500;
     transition: var(--tran-03);
+    flex: 1;
 }
 
 .edit-btn {
@@ -1792,4 +1793,29 @@ input:checked + .slider:before {
 .save-btn:hover, .reset-btn:hover {
     opacity: 0.9;
     transform: scale(1.05);
+}
+
+.password-input {
+    position: relative;
+}
+
+.toggle-password2 {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.password-strength {
+    margin-top: 15px;
+}
+
+.strength-bar {
+    height: 4px;
+    background: #e74c3c;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    width: 30%;
 }

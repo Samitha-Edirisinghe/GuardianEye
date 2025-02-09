@@ -191,25 +191,27 @@
 
                 <!-- Security Settings -->
                 <div class="settings-card">
-                    <h3 class="settings-title">Security</h3>
+                    <h3 class="settings-title">Password & Security</h3>
                     <div class="setting-item">
-                        <label>Two-Factor Authentication</label>
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider"></span>
-                        </label>
+                        <label for="currentPassword">Current Password</label>
+                        <div class="password-input">
+                            <input type="password" id="currentPassword"  class="settings-input">
+                            <i class="bx bx-hide toggle-password2"></i>
+                        </div>
                     </div>
                     <div class="setting-item">
-                        <label>Password</label>
-                        <button class="change-password-btn">Change Password</button>
+                        <label for="newPassword">New Password</label>
+                        <div class="password-input">
+                            <input type="password" id="newPassword"  class="settings-input">
+                            <i class="bx bx-hide toggle-password2"></i>
+                        </div>
                     </div>
                     <div class="setting-item">
-                        <label>Session Timeout</label>
-                        <select class="settings-select">
-                            <option>15 minutes</option>
-                            <option>30 minutes</option>
-                            <option>1 hour</option>
-                        </select>
+                        <label for="confirmPassword">Confirm New Password</label>
+                        <div class="password-input">
+                            <input type="password" id="confirmPassword" class="settings-input">
+                            <i class="bx bx-hide toggle-password2"></i>
+                        </div>
                     </div>
                 </div>
 
@@ -239,33 +241,7 @@
                     </div>
                 </div>
 
-                <!-- System Preferences -->
-                <div class="settings-card">
-                    <h3 class="settings-title">System Preferences</h3>
-                    <div class="setting-item">
-                        <label>Map Default View</label>
-                        <select class="settings-select">
-                            <option>Satellite View</option>
-                            <option>Street View</option>
-                            <option>Hybrid View</option>
-                        </select>
-                    </div>
-                    <div class="setting-item">
-                        <label>Data Retention</label>
-                        <select class="settings-select">
-                            <option>30 Days</option>
-                            <option>60 Days</option>
-                            <option>90 Days</option>
-                        </select>
-                    </div>
-                    <div class="setting-item">
-                        <label>Theme</label>
-                        <select class="settings-select" id="themeSelector">
-                            <option value="dark">Dark Mode</option>
-                            <option value="light">Light Mode</option>
-                        </select>
-                    </div>
-                </div>
+                
             </div>
 
             <div class="settings-actions">
@@ -282,5 +258,23 @@
 
     <!----======== jS ======== -->
     <script type="text/javascript" src="assets/js/script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const togglePasswordButtons = document.querySelectorAll('.toggle-password2');
+            
+            togglePasswordButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const input = this.parentElement.querySelector('input');
+                    const type = input.getAttribute('type') === 'password' ? 'text' : 'password';
+                    input.setAttribute('type', type);
+                    
+                    // Toggle eye icon
+                    this.classList.toggle('bx-hide');
+                    this.classList.toggle('bx-show');
+                });
+            });
+        });
+    </script>
 
 </html>
