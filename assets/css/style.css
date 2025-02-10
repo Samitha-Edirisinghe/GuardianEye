@@ -1357,7 +1357,7 @@ hr {
 }
 
 .unread{
-    background-color: #203951;
+    background-color: var(--body-color);
 }
 
 .unread .notification-status {
