@@ -116,3 +116,89 @@ function updateNotificationCount() {
 document.addEventListener('DOMContentLoaded', function() {
     updateNotificationCount();
 });
+
+
+// Officer data (only badge numbers needed now)
+const officerData = {
+    1: { badge: "1001" },
+    2: { badge: "1002" },
+    3: { badge: "1003" },
+    4: { badge: "1004" },
+    5: { badge: "1005" },
+    6: { badge: "1006" },
+    7: { badge: "1007" },
+    8: { badge: "1008" },
+    9: { badge: "1009" },
+    10: { badge: "1010" }
+};
+
+// Initialize officer functionality
+document.addEventListener('DOMContentLoaded', function() {
+    // Click handlers for officer list
+    document.querySelectorAll('.crime-count').forEach(officerElement => {
+        officerElement.addEventListener('click', function() {
+            const officerNum = parseInt(this.getAttribute('data-officer'));
+            const phoneNum = this.getAttribute('data-phone');
+            showOfficerDetails(officerNum, phoneNum);
+        });
+    });
+
+    // Call button handler
+    document.getElementById('officerCallBtn')?.addEventListener('click', function() {
+        const phoneNum = document.getElementById('officerPhone').textContent;
+        initiateCall(phoneNum);
+    });
+
+    // Message button handler
+    document.querySelector('.message-btn')?.addEventListener('click', function() {
+        const phoneNum = document.getElementById('officerPhone').textContent;
+        messageOfficer(phoneNum);
+    });
+
+    // Dispatch button handler
+    document.querySelector('.dispatch-btn')?.addEventListener('click', function() {
+        const officerName = document.getElementById('officerName').textContent;
+        dispatchOfficer(officerName);
+    });
+});
+
+// Show officer details in panel
+function showOfficerDetails(officerNumber, phoneNumber) {
+    const panel = document.getElementById('officerDetailPanel');
+    
+    // Update officer details
+    document.getElementById('officerName').textContent = `Officer ${officerNumber.toString().padStart(2, '0')}`;
+    document.getElementById('officerBadge').textContent = officerData[officerNumber]?.badge || `100${officerNumber}`;
+    document.getElementById('officerPhone').textContent = phoneNumber;
+    
+    // Show last 4 digits on call button
+    document.getElementById('officerCallBtn').textContent = `Call (${phoneNumber.slice(-4)})`;
+    
+    // Show panel
+    panel.style.display = 'block';
+}
+
+// Close panel when clicking outside
+document.addEventListener('click', function(event) {
+    const officerPanel = document.getElementById('officerDetailPanel');
+    if (!event.target.closest('.crime-count') && !event.target.closest('.officer-detail-panel')) {
+        if (officerPanel) officerPanel.style.display = 'none';
+    }
+});
+
+// Action functions
+function initiateCall(phoneNumber) {
+    console.log(`Calling: ${phoneNumber}`);
+    // In production: window.location.href = `tel:${phoneNumber}`;
+    alert(`Calling: ${phoneNumber}`);
+}
+
+function messageOfficer(phoneNumber) {
+    console.log(`Messaging: ${phoneNumber}`);
+    alert(`Messaging: ${phoneNumber}`);
+}
+
+function dispatchOfficer(officerName) {
+    console.log(`Dispatching: ${officerName}`);
+    alert(`Dispatching: ${officerName}`);
+}

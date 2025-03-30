@@ -1166,6 +1166,7 @@ hr {
     border-bottom: 1px solid;
     border-color: var(--text-color);
     padding: 10px;
+    font-size: 18px;
 }
 
 .notification-id{
@@ -1262,6 +1263,7 @@ hr {
     border-radius: 8px;
     display: inline-block;
     margin-top: 15px;
+    cursor: pointer;
 }
 
 .crime-count:hover {
@@ -1839,4 +1841,81 @@ input:checked + .slider:before {
     border-radius: 2px;
     margin-bottom: 5px;
     width: 30%;
+}
+/* Officer Detail Panel */
+.officer-detail-panel {
+    position: absolute;
+    right: 1.6%;
+    top: 70px;
+    width: 255px;
+    background: #3d3f52;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    display: none;
+}
+
+.officer-detail-content {
+    margin-top: 10px;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding: 4px 0;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+.detail-value {
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+.detail-value#officerPhone {
+    font-family: monospace;
+}
+
+.officer-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 8px;
+}
+
+.call-btn, .message-btn, .dispatch-btn {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 12px;
+    flex: 1;
+    transition: all 0.2s;
+    padding: 5px;
+}
+
+.call-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.message-btn {
+    background-color: #2196F3;
+    color: white;
+}
+
+.dispatch-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.call-btn:hover, .message-btn:hover, .dispatch-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
 }

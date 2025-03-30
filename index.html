@@ -247,19 +247,44 @@
 
         <div class="incident-summary">
 
-            <div class="incident-box incident-box1" >
+            <!-- Add this near your notification dropdown -->
+            <div class="officer-detail-panel" id="officerDetailPanel">
+                <h6 class="crime-video-text notification-text">Officer Details</h6>
+                <div class="officer-detail-content">
+                    <div class="detail-row">
+                        <span class="detail-label">Name:</span>
+                        <span class="detail-value" id="officerName">Officer 01</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Badge #:</span>
+                        <span class="detail-value" id="officerBadge">1001</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Phone:</span>
+                        <span class="detail-value" id="officerPhone">+94112345601</span>
+                    </div>
+                    <div class="officer-actions">
+                        <button class="call-btn" id="officerCallBtn">Call</button>
+                        <button class="message-btn">Message</button>
+                        <button class="dispatch-btn">Dispatch</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Updated Officer List -->
+            <div class="incident-box incident-box1">
                 <h4>Police officers near the crime scene</h4>
                 <hr class="hr7">
-                <div class="crime-count"><a href="tel:+4733378901">Officer 01</a></div>
-                <div class="crime-count"><a href="tel:+4733378901">Officer 02</a></div>
-                <div class="crime-count"><a href="tel:+4733378901">Officer 03</a></div>
-                <div class="crime-count"><a href="tel:+4733378901">Officer 04</a></div>
-                <div class="crime-count"><a href="tel:+4733378901">Officer 05</a></div>
-                <div class="crime-count"><a href="tel:+4733378901">Officer 06</a></div>
-                <div class="crime-count"><a href="tel:+4733378901">Officer 07</a></div>
-                <div class="crime-count"><a href="tel:+4733378901">Officer 08</a></div>
-                <div class="crime-count"><a href="tel:+4733378901">Officer 09</a></div>
-                <div class="crime-count"><a href="tel:+4733378901">Officer 10</a></div>
+                <div class="crime-count" data-officer="1" data-phone="+94112345601">Officer 01</div>
+                <div class="crime-count" data-officer="2" data-phone="+94112345602">Officer 02</div>
+                <div class="crime-count" data-officer="3" data-phone="+94112345603">Officer 03</div>
+                <div class="crime-count" data-officer="4" data-phone="+94112345604">Officer 04</div>
+                <div class="crime-count" data-officer="5" data-phone="+94112345605">Officer 05</div>
+                <div class="crime-count" data-officer="6" data-phone="+94112345606">Officer 06</div>
+                <div class="crime-count" data-officer="7" data-phone="+94112345607">Officer 07</div>
+                <div class="crime-count" data-officer="8" data-phone="+94112345608">Officer 08</div>
+                <div class="crime-count" data-officer="9" data-phone="+94112345609">Officer 09</div>
+                <div class="crime-count" data-officer="10" data-phone="+94112345610">Officer 10</div>
             </div>
 
             <div class="incident-box incident-box2">
