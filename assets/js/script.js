@@ -120,16 +120,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Officer data (only badge numbers needed now)
 const officerData = {
-    1: { badge: "1001" },
-    2: { badge: "1002" },
-    3: { badge: "1003" },
-    4: { badge: "1004" },
-    5: { badge: "1005" },
-    6: { badge: "1006" },
-    7: { badge: "1007" },
-    8: { badge: "1008" },
-    9: { badge: "1009" },
-    10: { badge: "1010" }
+    1: { badge: "GCU-4560" },
+    2: { badge: "GCU-4561" },
+    3: { badge: "GCU-4562" },
+    4: { badge: "GCU-4563" },
+    5: { badge: "GCU-4564" },
+    6: { badge: "GCU-4565" },
+    7: { badge: "GCU-4566" },
+    8: { badge: "GCU-4567" },
+    9: { badge: "GCU-4568" },
+    10: { badge: "GCU-4569" }
 };
 
 // Initialize officer functionality
