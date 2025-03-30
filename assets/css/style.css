@@ -1188,7 +1188,6 @@ hr {
 
 .incident-summary {
     display: flex;
-    justify-content: space-between;
     border-radius: 12px;
     margin-top: 10px;
     margin-left: 20px;
@@ -1201,11 +1200,24 @@ hr {
     padding: 10px;
     border-radius: 10px;
     color: white;
-    flex: 1;
     margin: 0 10px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     
+}
+
+.incident-box1{
+    width: 625px;
+}
+
+.incident-box2{
+    margin-left: 0px;
+    width: 323px;
+}
+
+.incident-box3{
+    margin-left: 0px;
+    width: 253px;
 }
 
 .incident-box h4 {
@@ -1225,7 +1237,7 @@ hr {
     border-radius: 8px;
     text-align: center;
     width: 30%;
-    margin-top: 10px;
+    margin-top: 9%;
 }
 
 .stat span {
@@ -1242,11 +1254,11 @@ hr {
 }
 
 .crime-count {
-    font-size: 26px;
+    font-size: 15px;
     font-weight: bold;
     color: var(--text-color);
     background: var(--primary-color);
-    padding: 15px 20px;
+    padding: 7px 15px;    ;
     border-radius: 8px;
     display: inline-block;
     margin-top: 15px;
@@ -1267,7 +1279,7 @@ hr {
     cursor: pointer;
     font-size: 16px;
     transition: 0.3s;
-    margin-top: 25px;
+    margin-top: 18%;
     border: 1px solid;
 }
 
