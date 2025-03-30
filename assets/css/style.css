@@ -1264,6 +1264,15 @@ hr {
     margin-top: 15px;
 }
 
+.crime-count:hover {
+    background-color: #0056b3;
+}
+
+.crime-count a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
 .report-box {
     display: flex;
     flex-direction: column;
